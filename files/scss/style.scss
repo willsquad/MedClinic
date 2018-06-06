@@ -213,6 +213,16 @@ button {
     #footer_top {
         background-color: #132F4A;
         height: 400px;
+        color: #fff;
+        padding: 60px 15px;
+
+        .footer_lhs {
+            h2 {
+                font-family: montserrat;
+                font-size: 28px;
+                font-weight: 600;
+            }
+        }
     }
 
     #footer_bottom {
