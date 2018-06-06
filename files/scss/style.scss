@@ -123,6 +123,25 @@ button {
     #header_top {
         background-color: #132F4A;
         height: $header_top_bar_height;
+        color: #BBBBBB;
+        font-size: 13px;
+        font-family: montserrat;
+         
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        i{
+            font-size: 18px;
+            margin-right: 5px;
+        }
+
+        .header_top_rhs {
+            div {
+                margin-left: 50px;
+            }
+        }
     }
 
     #header_bottom {
@@ -199,6 +218,12 @@ button {
     #footer_bottom {
         background-color: #fff;
         height: 75px;
+        font-size: 14px;
+
+        i {
+            font-size: 22px;
+            margin-right: 3px;
+        }
     }
 }
 /*** Footer ***/
