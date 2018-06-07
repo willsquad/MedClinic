@@ -3,7 +3,7 @@
 @import 'mixins/breakpoints';
 
 body {
-    background-color: #F7F7F7; //overflow-y: hidden;
+    background-color: $body_bg_color; //overflow-y: hidden;
     font-family: "open sans";
 }
 
@@ -133,8 +133,12 @@ button {
         }
 
         i{
-            font-size: 18px;
+            font-size: 14px;
             margin-right: 5px;
+
+            &.fa-phone {
+                transform: scaleX(-1);
+            }
         }
 
         .header_top_rhs {
@@ -212,23 +216,84 @@ button {
 #footer {
     #footer_top {
         background-color: #132F4A;
-        height: 400px;
+        min-height: 365px;
         color: #fff;
-        padding: 60px 15px;
+        padding: 60px 15px 30px;
 
-        .footer_lhs {
+        & > .max_width > div {
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 100px;
+            }
+            
+        }
+
+        .footer_sections {
+            height: 240px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             h2 {
                 font-family: montserrat;
-                font-size: 28px;
+                font-size: 26px;
                 font-weight: 600;
+                margin-bottom: 0;
+            }
+
+            p {
+                color: #a2a2a2;
+                font-size: 14px;
+                width: 75%;
+                margin-bottom: 0px;
+                line-height: 1.75em;
+            }
+            .social_icons {
+                i {
+                    margin-right: 40px;
+                }
+            }
+        }
+
+        .footer_mhs {
+            color: #fff;
+            font-size: 15px;
+            i {
+                color: #ddd;
+                margin-right: 10px;
+                font-size: 16px;
+
+                &.fa-phone {
+                    transform: scaleX(-1);
+                }
+            }
+
+            & > div {
+                color: #a2a2a2;
+                font-size: 14px;
+            }
+            h2 {
+                font-family: "open sans";
+                font-size: 20px;
+            }
+        }
+
+        .footer_rhs {
+            h2 {
+                font-family: "open sans";
+                font-size: 20px;
+                margin-bottom: 35px;
+            }
+            a {
+                color: #a2a2a2;
+                text-transform: uppercase;
+                font-size: 13px;
             }
         }
     }
 
     #footer_bottom {
         background-color: #fff;
-        height: 75px;
-        font-size: 14px;
+        height: 80px;
+        font-size: 13px;
 
         i {
             font-size: 22px;
