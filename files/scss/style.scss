@@ -343,6 +343,12 @@ button {
             font-weight: 700;
             color: #fff;
             user-select: none;
+            flex-direction: column;
+
+            span {
+                font-size: 14px;
+                color: #BBBBBB;
+            }
         }
     }
 
@@ -602,6 +608,34 @@ button {
                 top: 210px;
                 box-shadow: rgba(0,0,0,0.1) 0px 45px 35px -40px; */
             }
+        }
+    }
+
+    .faq_div {
+        padding: 60px 30px;
+        
+        .faq_header {
+            background-color: #E1E1E1;
+            border-radius: 50px;
+            height: 45px;
+            display: flex;
+
+            .faq_categories {
+                height: 45px;
+                background-color: #FF4A4A;
+                border-radius: 30px;
+                color: #fff;
+                min-width: 90px;
+                font-weight: 600;
+                font-family: montserrat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .faq_content {
+            margin-top: 50px;
         }
     }
 }
