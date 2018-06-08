@@ -3,4 +3,5 @@ $(document).ready(function() {
        $('.address_map_container').addClass('slide_down_height').slideDown();
        $(this).addClass('hide');
    });
+
 });

@@ -13,6 +13,7 @@
     position: relative;
 }
 
+
 /* Colors */
 $body_bg_color: #f1f3f3;
 /* Colors */
@@ -22,6 +23,8 @@ $max_width: 1250px;
 /* Header */
 $header_top_bar_height: 60px;
 /* Header */
+
+$location_iframe_height: 600px;
 
 
 /********* BOOTSTRAP MEDIA-QUERY MIXINS ********* Media Breakpoint  DUBO: down, up, between, only ************
