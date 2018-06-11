@@ -810,5 +810,207 @@ button {
     }
     /* Faq Div */
 
+    .blog_div_container {
+        padding: 60px 30px;
+
+        .blog_div {
+            
+
+            & > .blog_unit {
+                background-color: #fff;
+                height: 500px;
+                margin-bottom: 30px;
+
+                &.blog_1 {
+                    & > .top {
+                        height: 200px;
+
+                        .tag {
+                            font-family: montserrat;
+                            position: absolute;
+                            top: 15px;
+                            left: 30px;
+                            color: #ffff;
+                            background-color: #132f4a;
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding: 5px 10px;
+                        }
+    
+                        img {
+                            object-fit: cover;
+                            height: 200px;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &.blog_1 {
+                    & > .bottom {
+                        padding: 30px;
+                        font-family: "open sans";
+                        height: calc(500px - 200px);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .date {
+                            color: #5d5d5d;
+                            font-size: 14px;
+                        }
+                        .title {
+                            color: #171717;
+                            font-size: 20px;
+                            font-weight: 700;
+                            //font-family: montserrat;
+                            
+                        }
+                        .content {
+                            font-size: 14px;
+                            color: #8B8B8B;
+                            line-height: 2em;
+                        }
+                    }
+                }
+
+                &.blog_2 {
+                    & > .top {
+                        height: 300px;
+
+                        .tag {
+                            font-family: montserrat;
+                            position: absolute;
+                            top: 15px;
+                            left: 30px;
+                            color: #ffff;
+                            background-color: #132f4a;
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding: 5px 10px;
+                        }
+    
+                        img {
+                            object-fit: cover;
+                            height: 300px;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &.blog_2 {
+                    & > .bottom {
+                        padding: 30px;
+                        font-family: "open sans";
+                        height: calc(500px - 300px);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .date {
+                            color: #5d5d5d;
+                            font-size: 14px;
+                        }
+                        .title {
+                            color: #171717;
+                            font-size: 20px;
+                            font-weight: 700;
+                            //font-family: montserrat;
+                            
+                        }
+                        .content {
+                            font-size: 14px;
+                            color: #8B8B8B;
+                            line-height: 2em;
+                        }
+                    }
+                }
+
+                &.blog_3 {
+                    display: flex;
+                    @include media-breakpoint-down(md) {
+                        flex-direction: column;
+                    }
+                    & > .top {
+                        min-width: 400px;
+                        height: 100%;
+
+                        @include media-breakpoint-down(md) {
+                            min-width: 100%;
+                            height: 300px;
+                        }
+
+                        .tag {
+                            font-family: montserrat;
+                            position: absolute;
+                            top: 15px;
+                            left: 30px;
+                            color: #ffff;
+                            background-color: #132f4a;
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding: 5px 10px;
+                        }
+    
+                        img {
+                            object-fit: cover;
+                            height: 100%;
+                            min-width: 400px;
+
+                            @include media-breakpoint-down(md) {
+                                min-width: 100%;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+
+                &.blog_3 {
+                    @include media-breakpoint-down(md) {
+                            height: auto;;
+                    }
+                    & > .bottom {
+                        padding: 30px;
+                        font-family: "open sans";
+                        display: flex;
+                        flex-direction: column;
+
+                        
+                        
+
+                        .date {
+                            color: #5d5d5d;
+                            font-size: 14px;
+                            margin-bottom: 3em;
+                        }
+                        .title {
+                            color: #171717;
+                            font-size: 20px;
+                            font-weight: 700;
+                            margin-bottom: 2em;
+                            //font-family: montserrat;
+                            
+                        }
+                        .content {
+                            font-size: 14px;
+                            color: #8B8B8B;
+                            line-height: 2em;
+                            margin-bottom: 2em;
+                        }
+
+                    }
+                }
+                
+
+                
+            }
+
+            .blog_3 {
+                height: 400px;
+            }
+        }
+
+        
+    }
+    /* Blog Div */
 }
 /*** Content ***/
