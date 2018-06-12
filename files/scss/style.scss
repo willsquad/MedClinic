@@ -710,6 +710,11 @@ button {
 
         .faq_content {
             margin-top: 50px;
+            min-height: 50vh;
+
+            @include media-breakpoint-down(sm) {
+                min-height: auto;
+            }
             /* display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px; */
@@ -1012,5 +1017,72 @@ button {
         
     }
     /* Blog Div */
+
+    .blog_article_div {
+        background-color: #fff;
+        min-height: 100vh;
+        padding: 35px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+
+        .date {
+            color: #5d5d5d;
+            font-size: 15px;
+            margin-bottom: 3em;
+        }
+        .title {
+            color: #171717;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 1.25em;
+            font-family: montserrat;
+            
+        }
+        .content {
+            font-size: 14px;
+            color: #8B8B8B;
+            line-height: 2em;
+            margin-bottom: 1em;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3em;
+            .author_image {
+                margin-right: 15px;
+                img {
+                    min-width: 70px;
+                    min-height: 70px;
+                    background-color: #eee;
+                    border-radius: 70px;
+                }
+            }
+            .author_name {
+                color: #5D5D5D;
+                font-weight: 600;
+            }
+        }
+        .article_image {
+            margin-bottom: 3em;
+        }
+        .article_content {
+            font-size: 20px;
+            color: #595959;
+            line-height: 1.85em;
+        }
+        .article_comment_section {
+            margin-top: 3em;
+            border-top: 5px solid #ccc;
+            border-bottom: 5px solid #ccc;
+            font-size: 35px;
+            text-align: center;
+            font-family: montserrat;
+            text-transform: uppercase;
+            padding: 40px 0px;
+            margin-bottom: 1em;
+        }
+    }
+    /* Blog article div */
 }
 /*** Content ***/
