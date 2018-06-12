@@ -20,96 +20,31 @@
         <div class="row">
             <!-- Header -->
             <div id="header" class="col-12">
-                <div class="row">
-                    <div id="header_top" class="col-12  d-flex">
-                        <div class="max_width d-flex align-items-center justify-content-between">
-                            <div class="header_top_lhs"><i class="fas fa-map-marker-alt"></i> Abc Street, Xyz City</div>
-                            <div class="header_top_rhs hidden-sm-down">
-                                <div class="time"><i class="far fa-clock"></i> Monday - Friday : 8:00 AM - 8:00 PM</div>
-                                <div class="phone"><i class="fas fa-phone"></i> 123-456-7890</div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div id="header_bottom" class="col-12 d-flex align-items-center">
-                        <div class="header_bottom_container max_width d-flex align-items-center justify-content-between">
-
-                            <!-- Logo -->
-                            <div class="logo">MedClinic</div>
-                            <!-- Logo -->
-
-                            <!-- Menu -->
-                            <div id="menu_item_container" class="hidden-sm-down">
-                                <ul id="primary-menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">About Us <i class="fas fa-angle-down"></i> </a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Sub Element</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Our Services</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Location</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <!-- Menu -->
-
-                            <!-- Appointment Button -->
-                            <div class="appointment_button_div">
-                                <a href="#">Appointment</a>
-                            </div>
-                            <!-- Appointment Button -->
-                        </div>
-                    </div>
-                </div>
+                <!-- Loaded using Jquery -->
             </div>
             <!-- Header -->
 
             <!-- Content -->
-            <div id="content" class="">
+            <div id="content">
 
+                <div class="slider_container">
+                    <img src="files/images/slider_snapshot.PNG" alt="">
+                </div>
+                
+                <!-- <div class="our_services">
+                    <div class="max_width col-12">
+
+                    </div>
+                </div> -->
+                
+                <!-- Max Width -->
             </div>
             <!-- Content -->
 
             
             <!-- Footer -->
-            <div id="footer" class="col-12">
-                <div class="row">
-                    <div id="footer_top" class="col-12">
-                        <div class="max_width row d-flex">
-                            <div class="footer_sections footer_lhs col-12 col-md-5">
-                                <h2>MedClinic</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa sint atque ab iure dicta earum perferendis dolores. Repellat dolorem magni earum.</p>
-                                <div class="social_icons">
-                                        <i class="fab fa-facebook-f"></i>
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-google"></i>
-                                </div>
-                            </div>
-                            <div class="footer_sections footer_mhs col-12 col-md-4">
-                                <h2>Contact Us</h2>
-                                <div class="address"><i class="fas fa-map-marker-alt"></i> Abc Street, Xyz City, Pqr State, Country</div>
-                                <div class="phone"><i class="fas fa-phone"></i> 123-456-7890</div>
-                                <div class="mail"><i class="fas fa-envelope"></i> mail@medclinic.com</div>
-                            </div>
-                            <div class="footer_sections footer_rhs col-12 col-md-3">
-                                <h2>Quick Links</h2>
-                                <a>Home</a>
-                                <a>About Us</a>
-                                <a>Meet Our Team</a>
-                                <a>Location</a>
-                                <a>Contact Us</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div id="footer_bottom" class="col-12 d-flex align-items-center justify-content-center">
-                        <i class="far fa-copyright"></i> MEDCLINIC 2018. ALL RIGHTS RESERVED.
-                    </div>
-                </div>
+            <div id="footer" class="col-12 location_footer">
+                <!-- Loaded using Jquery -->
             </div>
             <!-- Footer -->
         </div>
@@ -121,5 +56,11 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="files/js/main.js"></script>
+<script> 
+$(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html");
+}); 
+</script>
 
 </html>
