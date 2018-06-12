@@ -1025,6 +1025,10 @@ button {
         margin-top: 30px;
         margin-bottom: 40px;
 
+        @include media-breakpoint-down(sm) {
+            padding: 30px;
+        }
+
         .date {
             color: #5d5d5d;
             font-size: 15px;
@@ -1036,6 +1040,10 @@ button {
             font-weight: 700;
             margin-bottom: 1.25em;
             font-family: montserrat;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 24px;
+            }
             
         }
         .content {
@@ -1070,6 +1078,10 @@ button {
             font-size: 20px;
             color: #595959;
             line-height: 1.85em;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 16px;
+            }
         }
         .article_comment_section {
             margin-top: 3em;
