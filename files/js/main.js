@@ -35,5 +35,43 @@ $(document).ready(function() {
         }
    });
 
+   $('.team_images_container').slick({
+        prevArrow:'<i class="arrow_left fas fa-chevron-left"></i>',
+        nextArrow:'<i class="arrow_right fas fa-chevron-right"></i>',
+        dots:true,
+        initialSlide: 0,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        centerMode: false,
+        centerPadding: '20px',
+        responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
+            }
+            }
+        ]
+    });
+
 
 });

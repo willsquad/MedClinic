@@ -1229,7 +1229,7 @@ button {
             padding: 70px 0px;
             
             @include media-breakpoint-down(sm) {
-                padding: 40px 15px;
+                padding: 50px 15px;
             }
 
 
@@ -1283,6 +1283,7 @@ button {
     /* Services row */
     .services_images_container {
         width: 100%;
+        margin: 0px;
         .services_images_div {
             img {
                 min-height: 320px;
@@ -1302,6 +1303,98 @@ button {
     /* Services row */
 
     /*** About Page ***/
-    
+
+
+    /*** Index Page ***/
+    /* Services section */
+    .index_services_row {
+        text-align: center;
+
+        .underline {
+            margin: 1.5em auto 2.5em;
+        }
+
+        .departments_message {
+            font-size: 18px;
+            font-weight: 400;
+            color: #5D5D5D;
+        }
+
+        .services_images_div {
+            img {
+                background-color: #fff;
+            }
+        }
+    }
+    /* Services section */
+
+    /* Meet our team */
+    .index_team_row {
+        background-color: #fff;
+    }
+    .team_images_container {
+       
+         //Slick slider arrow styles included inthe index.html page head
+
+        .team_images_div {
+            padding: 50px;
+            outline: none;
+
+            .team_image_wrapper {
+                box-shadow: rgba(0,0,0,0.15) 0px 0px 5px 0px;
+            }
+
+            
+            .image_div {
+                img {
+                    min-height: 400px;
+                    max-height: 400px;
+                    background-color: #F1F3F3;
+                    min-width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .name_div {
+                height: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 25px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                
+
+                h3 {
+                    font-family: montserrat;
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #2F3D4A;
+                    margin-bottom: 15px;
+                }
+
+                h6 {
+                    font-family: "open sans";
+                    font-size: 15px;
+                    color: #848484;
+                    font-weight: 300;
+                }
+            }
+
+            
+        }
+    }
+    /* Meet our team */
+
+    /* Testimonials */
+    .index_testimonials_row {
+        background-color: #3B4754;
+        min-height: 500px;
+    }
+    /* Testimonials */
+    /*** Index Page ***/
+
 }
 /*** Content ***/

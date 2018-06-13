@@ -8,10 +8,36 @@
         <title>
             MedClinic
         </title>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
         <link rel="stylesheet" href="files/css/bootstrap.css">
         <link rel="stylesheet" href="files/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <style>
+        i.arrow_left {
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 40%;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 10000;
+            font-size: 22px;
+        }
+
+        i.arrow_right {
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 40%;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 10000;
+            font-size: 22px;
+        }
+        </style>
+        
     </head>
 <body>
     <!-- START OF MAIN CONTAINER FLUID -->
@@ -30,6 +56,109 @@
                 <div class="slider_container">
                     <img src="files/images/slider_snapshot.PNG" alt="">
                 </div>
+
+                <div class="index_services_row">
+                    <div class="max_width col-12">
+                        <div class="departments_div">
+                            <h2>Our Services</h2>
+                            <div class="underline"></div>
+                            <div class="departments_message">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas culpa similique repellat accusamus non illo temporibus! Modi sed suscipit quo quae. Nesciunt, animi sint quas vel reprehenderit repellendus?
+                            </div>
+                            <div class="services_images_container row">
+                                <div class="col-12 col-md-4 services_images_div"><img src="" alt=""></div>
+                                <div class="col-12 col-md-4 services_images_div"><img src="" alt=""></div>
+                                <div class="col-12 col-md-4 services_images_div"><img src="" alt=""></div>
+                            </div>
+                        </div>
+                    </div>      
+                    <!-- Max Width -->
+                </div>
+                <!-- Row -->
+
+
+                <div class="index_services_row index_team_row">
+                    <div class="max_width col-12">
+                        <div class="departments_div">
+                            <h2>Meet our team</h2>
+                            <div class="underline"></div>
+                            <div class="departments_message">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas culpa similique repellat accusamus non illo temporibus! Modi sed suscipit quo quae. Nesciunt, animi sint quas vel reprehenderit repellendus?
+                            </div>
+                            <div class="team_images_container row">
+                                <div class="col-12 col-md-4 team_images_div">
+                                    <div class="team_image_wrapper">
+                                        <div class="image_div">
+                                            <img src="files/images/doctor_1.jpeg" alt="">
+                                        </div>
+                                        <div class="name_div">
+                                            <h3>Dr. John Doe</h3>
+                                            <h6>Department Name</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 team_images_div">
+                                    <div class="team_image_wrapper">
+                                        <div class="image_div">
+                                            <img src="files/images/doctor-1149149_640.jpg" alt="">
+                                        </div>
+                                        <div class="name_div">
+                                            <h3>Dr. John Smith</h3>
+                                            <h6>Department Name</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 team_images_div">
+                                    <div class="team_image_wrapper">
+                                        <div class="image_div">
+                                            <img src="files/images/nurse-2141808_640.jpg" alt="">
+                                        </div>
+                                        <div class="name_div">
+                                            <h3>Dr. Jane Doe</h3>
+                                            <h6>Department Name</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 team_images_div">
+                                    <div class="team_image_wrapper">
+                                        <div class="image_div">
+                                            <img src="files/images/doctor_1.jpeg" alt="">
+                                        </div>
+                                        <div class="name_div">
+                                            <h3>Dr. John Doe</h3>
+                                            <h6>Department Name</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 team_images_div">
+                                    <div class="team_image_wrapper">
+                                        <div class="image_div">
+                                            <img src="files/images/doctor-1149149_640.jpg" alt="">
+                                        </div>
+                                        <div class="name_div">
+                                            <h3>Dr. John Smith</h3>
+                                            <h6>Department Name</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of individual Doctor slider -->
+                            </div>
+                            <!-- End of Doctors slider Continer-->
+                        </div>
+                    </div>      
+                    <!-- Max Width -->
+                </div>
+                <!-- Row -->
+
+                <div class="index_testimonials_row">
+                    <div class="max_width col-12">
+                        <div class="testimonials_div">
+                            
+                        </div>
+                    </div>      
+                    <!-- Max Width -->
+                </div>
+                <!-- Row -->
                 
                 <!-- <div class="our_services">
                     <div class="max_width col-12">
@@ -55,7 +184,9 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="files/js/main.js"></script>
+
 <script> 
 $(function(){
     $("#header").load("header.html"); 
