@@ -1313,13 +1313,17 @@ button {
         text-align: center;
 
         .underline {
-            margin: 1.5em auto 2.5em;
+            margin: 1.5em auto 3.25em;
         }
 
         .departments_message {
             font-size: 18px;
             font-weight: 400;
             color: #5D5D5D;
+            width: 70%;
+            font-size: 18px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .services_images_div {
@@ -1339,8 +1343,6 @@ button {
         }
     }
     .team_images_container {
-       
-         //Slick slider arrow styles included inthe index.html page head
 
         .team_images_div {
             padding: 50px;
@@ -1421,9 +1423,149 @@ button {
     .index_testimonials_row {
         background-color: #3B4754;
         min-height: 500px;
+
+        h2 {
+            color: #fff;
+        }
+
+        .underline {
+            margin-bottom: 4em;
+        }
+
+        .testimonial_slider_container {
+            .testimonial_slider_div {
+                
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                outline: none;
+                margin-bottom: 4em;
+
+                .testimonial_quote {
+                    font-size: 19px;
+                    color: #dbdbdb;
+                    font-weight: 400;
+                    line-height: 1.8em;
+
+                    width: 80%;
+                    margin: 0 auto;
+
+                    @include media-breakpoint-down(sm) {
+                        width: 95%;
+                        font-size: 15px;
+                    }
+
+                    i {
+                        margin: 0px 2px;
+                        color: #E8E8E8;
+                        position: relative;
+                        top:-5px;
+                    }
+                }
+
+                .testimonial_user {
+                    .user_image {
+                        margin-bottom: 2em;
+                        display: inline-flex;
+                        img {
+                            min-width: 90px;
+                            min-height: 90px;
+                            max-width: 90px;
+                            max-height: 90px;
+                            border-radius: 90px;
+                            background-color: #EBEBEB;
+
+                            @include media-breakpoint-down(sm) {
+                                min-width: 70px;
+                                min-height: 70px;
+                                max-width: 70px;
+                                max-height: 70px;
+                                width: 90%;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    .user_name {
+                        font-family: montserrat;
+                        color: #fff;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        font-size: 16px;
+
+                        @include media-breakpoint-down(sm) {
+                            font-size: 14px;
+                        }
+
+                        span {
+                            font-weight: 300;
+                            color: #eee;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-dots li button:before {
+            color: #FF4A4A;
+            font-size: 15px;
+        }
     }
     /* Testimonials */
+    /* Contact Us */
+    .index_contact_row {
+        .contact_div {
+            position: relative;
+            top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    /* Contact Us */
     /*** Index Page ***/
 
+    /* Slick slider arrows */
+    i.arrow_left {
+        float: left;
+        position: absolute;
+        left: 0;
+        top: 40%;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 10000;
+        font-size: 22px;
+    }
+
+    i.arrow_right {
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 40%;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 10000;
+        font-size: 22px;         
+    }
+
+    @media only screen and (max-width: 767px) {
+        i.arrow_right {
+            right: -15px;
+        }
+
+        i.arrow_left {
+            left: -15px;
+        }
+    }
+
+    .testimonial_arrow {
+        font-size: 36px !important;
+        color: #fff;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 30px !important;
+        }
+    }
+    /* Slick slider arrows */
 }
 /*** Content ***/
+
