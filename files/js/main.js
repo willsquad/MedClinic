@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+    $(document).on('click', '#menu_icon', function(){
+        $('#primary-menu').slideToggle();
+        $(this).find('i').toggleClass('fas-bars fas-times');
+    });
+
+
    $('.address_map_overlay').on('click', function(){
        $('.address_map_container').addClass('slide_down_height').slideDown();
        $(this).addClass('hide');

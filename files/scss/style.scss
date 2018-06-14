@@ -125,7 +125,7 @@ button {
         background-color: #132F4A;
         height: $header_top_bar_height;
         color: #BBBBBB;
-        font-size: 13px;
+        font-size: 12px;
         font-family: montserrat;
          
         div {
@@ -151,7 +151,8 @@ button {
 
     #header_bottom {
         background-color: #fff;
-        height: 95px;
+        height: 80px;
+
 
         .header_bottom_container {
         }
@@ -162,14 +163,24 @@ button {
             color: #07668C;
             font-size: 28px;
 
+            a{
+                text-decoration: none;
+                color: #07668C;
+            }
+            
+
             @include media-breakpoint-down(sm) {
-                font-size: 26px;
+                font-size: 24px;
             }
         }
 
         #menu_item_container {
             flex-grow: 1;
             margin-left: 65px;
+
+            @include media-breakpoint-down(sm) {
+                margin-left: 10px;
+            }
         }
 
         #primary-menu {
@@ -177,9 +188,34 @@ button {
             margin: 0px;
             padding: 0px;
 
+             @include media-breakpoint-down(md) {
+                position: absolute;
+                left: 0;
+                padding-left: 0px;
+                width: 100%;
+                top:  80px;
+                text-align: left;
+                display: none;
+                background: #3B4754;
+                z-index: 1000000;
+            }
+
             li {
                 display: inline-block;
-                margin-right: 45px;
+                margin-right: 25px;
+
+                @include media-breakpoint-between(sm, lg) {
+                    margin-right: 5px;
+                }
+
+                @include media-breakpoint-down(md) {
+                    display: block;
+                    font-size: 13px;
+                    margin-right: 0px;
+                    
+                }
+
+                
 
                 a {
                     text-decoration: none;
@@ -189,6 +225,29 @@ button {
                     text-transform: uppercase;
                     color: #222;
                     outline: none;
+                    transition: all 0.3s ease;
+                    padding: 15px;
+
+                    @include media-breakpoint-between(md, lg) {
+                        padding: 20px 15px;
+                    }
+        
+                    @include media-breakpoint-down(md) {
+                        padding: 20px 20px;
+                        display: block;
+                        //background: #332e2d;
+                        background-color: #332e2d;
+                        color: #fff;
+                        font-size: 13px;
+                    }
+
+                    &:hover {
+                        
+                        @include media-breakpoint-down(md) {
+                            color:#fff;
+                            background-color: #FF4A4A;
+                        }
+                    }
                 }
 
                 i {
@@ -201,11 +260,17 @@ button {
         }
 
         .appointment_button_div {
+            position: relative;
+                top: -1px;
+            @include media-breakpoint-down(sm) {
+                position: relative;
+                top: -2px;
+            }
             a {
                 color: #fff;
                 font-family: montserrat;
                 font-weight: 600;
-                padding: 15px 30px;
+                padding: 13px 25px;
                 background-color: #FF4A4A;
                 font-size: 13px;
                 text-transform: uppercase;
@@ -213,8 +278,20 @@ button {
                 text-decoration: none;
 
                 @include media-breakpoint-down(sm) {
-                    font-size: 12px;
-                    padding: 15px 20px;
+                    font-size: 11px;
+                    padding: 12px 12px;
+                }
+            }
+        }
+
+        .menu_button {
+            margin-left: 30px;
+            cursor: pointer;
+            i {
+                font-size: 28px;
+
+                @include media-breakpoint-down(sm) {
+                    color: #132F4A;
                 }
             }
         }
@@ -341,6 +418,9 @@ button {
         background-image: url('../images/banner.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        @include media-breakpoint-down(sm) {
+            height: 125px;
+        }
         &__overlay {
             background: rgba(0,0,0,0.5);
             height: 100%;
@@ -817,6 +897,9 @@ button {
 
     .blog_div_container {
         padding: 60px 30px;
+        @include media-breakpoint-down(sm) {
+            padding: 60px 0px;
+        }
 
         .blog_div {
             
@@ -1324,6 +1407,10 @@ button {
             font-size: 18px;
             margin-left: auto;
             margin-right: auto;
+
+            @include media-breakpoint-down(sm) {
+                width: 95%;
+            }
         }
 
         .services_images_div {
@@ -1353,7 +1440,7 @@ button {
             }
 
             .team_image_wrapper {
-                box-shadow: rgba(0,0,0,0.15) 0px 0px 5px 0px;
+                box-shadow: rgba(0,0,0,0.15) 0px 0px 40px 0px;
             }
 
             
