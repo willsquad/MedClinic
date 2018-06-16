@@ -460,7 +460,8 @@ button {
         margin-bottom: 50px;
 
         @include media-breakpoint-down(sm) {
-            padding: 60px 40px;
+            //padding: 60px 40px;
+            padding: 40px 20px;
         }
 
         h3 {
