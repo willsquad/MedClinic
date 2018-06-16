@@ -5,8 +5,6 @@ $(document).ready(function() {
         $('#mobile_menu_i').toggleClass('fa-bars fa-times');
     });
 
-    //nice select
-    $('select').niceSelect();
 
 
    $('.address_map_overlay').on('click', function(){

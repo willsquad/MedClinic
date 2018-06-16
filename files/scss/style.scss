@@ -1676,6 +1676,55 @@ button {
     }
     /*** Appointment Page ***/
 
+    /*** Forms Page ***/
+    .forms_section {
+        padding: 60px 15px;
+        min-height: 50vh;
+
+        @include media-breakpoint-down(sm) {
+            padding: 40px 15px;
+        }
+        .form_div {
+            background-color:#3B4754;
+            height: 100px;
+            font-family: montserrat;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            align-items: center;
+            margin-bottom: 30px;
+            cursor: pointer;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 20px;
+            }
+
+            .form_name {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 16px;
+                }
+            }
+
+            .form_icon {
+                i {
+                    font-size: 28px;
+                    color: #FF4A4A;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    /*** Forms Page ***/
+
     /* Slick slider arrows */
     i.arrow_left {
         float: left;
