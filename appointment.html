@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+            MedClinic
+        </title>
+        <link rel="stylesheet" href="files/css/bootstrap.css">
+        <link rel="stylesheet" href="files/css/nice-select.css">
+        <link rel="stylesheet" href="files/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
+<body>
+    <!-- START OF MAIN CONTAINER FLUID -->
+    <div class="container-fluid">
+        <!-- START OF MAIN ROW -->
+        <div class="row">
+            <!-- Header -->
+            <div id="header" class="col-12">
+                <!-- Loaded using Jquery -->
+            </div>
+            <!-- Header -->
+
+            <!-- Content -->
+            <div id="content" class="">
+                <div class="page_title_section_container">
+                    <div class="page_title_section_container__overlay">
+                        Appointment
+                    </div>
+                </div>
+
+                <div class="max_width col-12">
+                    <div class="contact_div appointment_div">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h3>Make an Appointment</h3>
+                                <div class="input_div_container">
+                                    <div class="input_div">
+                                        <p>Patient Name <span class="required" title="Required">*</span></p>
+                                        <input type="text" required>
+                                    </div>
+                                    <div class="input_div">
+                                        <p>Gender <span class="required" title="Required">*</span></p>
+                                       <div class="select_container d-flex">
+                                           <select name="" id="">
+                                               <option value="1">Male</option>
+                                               <option value="2">Female</option>
+                                               <option value="3">Other</option>
+                                           </select>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input_div col-12 col-lg-6">
+                                            <p>Email <span class="required" title="Required">*</span></p>
+                                            <input type="email" required>
+                                        </div>
+                                        <div class="input_div col-12 col-lg-6">
+                                            <p>Phone <span class="required" title="Required">*</span></p>
+                                            <input type="tel" required>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 appointment_details_container">
+
+                                <div class="input_div_container">
+                                    <div class="input_div">
+                                        <p>Health Concern <span class="required" title="Required">*</span></p>
+                                        <div class="select_container d-flex">
+                                            <select name="" id="">
+                                                <option value="1">Accident and Emergency Medicine</option>
+                                                <option value="2">Biochemistry</option>
+                                                <option value="3">Cardiology</option>
+                                                <option value="5">Dermatology</option>
+                                                <option value="6">ENT</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input_div">
+                                        <p>Date <span class="required" title="Required">*</span></p>
+                                        <input type="date" required>
+                                    </div>
+                                    <div class="input_div">
+                                        <p>Time Slot <span class="required" title="Required">*</span></p>
+                                        <div class="select_container d-flex">
+                                            <select name="" id="">
+                                                <option value="1">09:00 AM - 01:00 PM</option>
+                                                <option value="2">01:00 PM - 04:00 PM</option>
+                                                <option value="3">04:00 PM - 08:00 PM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- End of input_div_container -->
+                                
+                            </div>
+
+                            <div class="input_div col-12">
+                                    <p>Leave a Note <span class="optional">(optional)</span></p>
+                                    <textarea name="" id="" ></textarea>
+                                </div>
+                                <div class="input_div submit_div col-12">
+                                    <button type="submit">Book an Appointment</button>
+                                </div>
+
+                        </div>
+                    </div>
+                    <!-- Contact Div -->
+                    
+                </div>
+                <!-- Max Width -->
+            </div>
+            <!-- Content -->
+
+            
+            <!-- Footer -->
+            <div id="footer" class="col-12">
+                <!-- Loaded using Jquery -->
+            </div>
+            <!-- Footer -->
+        </div>
+        <!-- END OF MAIN ROW -->
+    </div>
+    <!-- END OF MAIN CONTAINER FLUID -->
+</body>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="files/js/nice-select.min.js"></script>
+<script src="files/js/main.js"></script>
+<script> 
+$(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html");
+}); 
+</script>
+
+</html>

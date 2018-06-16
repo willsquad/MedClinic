@@ -5,6 +5,9 @@ $(document).ready(function() {
         $('#mobile_menu_i').toggleClass('fa-bars fa-times');
     });
 
+    //nice select
+    $('select').niceSelect();
+
 
    $('.address_map_overlay').on('click', function(){
        $('.address_map_container').addClass('slide_down_height').slideDown();
