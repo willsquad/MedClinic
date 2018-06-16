@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $(document).on('click', '#menu_icon', function(){
         $('#primary-menu').slideToggle();
-        $(this).find('i').toggleClass('fas-bars fas-times');
+        $('#mobile_menu_i').toggleClass('fa-bars fa-times');
     });
 
 
