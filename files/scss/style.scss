@@ -1621,6 +1621,10 @@ button {
             top: 0px;
             margin-bottom: 0px;
         }
+
+        .index_message_submit_button_div {
+            text-align: left;
+        }
     }
     /* Contact Us */
     /*** Index Page ***/
@@ -1639,7 +1643,7 @@ button {
         .input_div button {
 
             border-radius: 100px;
-            min-width: 30%;
+            //min-width: 30%;
             @include media-breakpoint-down(sm) {
                 width: 100%; 
             }
